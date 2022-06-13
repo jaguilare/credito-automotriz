@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreditoAutomotriz.API", "CreditoAutomotriz.API\CreditoAutomotriz.API.csproj", "{E8FF1CE8-1AF7-49B1-816D-5F96EE72669D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreditoAutomotriz.Domain", "CreditoAutomotriz.Domain\CreditoAutomotriz.Domain.csproj", "{37B492D4-B311-432B-BEDA-B9A9FD825B43}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreditoAutomotriz.Entities", "CreditoAutomotriz.Entities\CreditoAutomotriz.Entities.csproj", "{79F967AF-C2EE-46ED-8525-95BC217F6A93}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreditoAutomotriz.Infrastructure", "CreditoAutomotriz.Infrastructure\CreditoAutomotriz.Infrastructure.csproj", "{70F7E77A-E0A0-4DFB-82A5-2E784ECA55D4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreditoAutomotriz.Repository", "CreditoAutomotriz.Repository\CreditoAutomotriz.Repository.csproj", "{1429ECE5-9D2D-430E-85F4-F28B737F6D02}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreditoAutomotriz.Test", "CreditoAutomotriz.Test\CreditoAutomotriz.Test.csproj", "{9930C454-FAC0-406D-AC0B-499E4CE3E5BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E8FF1CE8-1AF7-49B1-816D-5F96EE72669D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8FF1CE8-1AF7-49B1-816D-5F96EE72669D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8FF1CE8-1AF7-49B1-816D-5F96EE72669D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8FF1CE8-1AF7-49B1-816D-5F96EE72669D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37B492D4-B311-432B-BEDA-B9A9FD825B43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37B492D4-B311-432B-BEDA-B9A9FD825B43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37B492D4-B311-432B-BEDA-B9A9FD825B43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37B492D4-B311-432B-BEDA-B9A9FD825B43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79F967AF-C2EE-46ED-8525-95BC217F6A93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79F967AF-C2EE-46ED-8525-95BC217F6A93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79F967AF-C2EE-46ED-8525-95BC217F6A93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79F967AF-C2EE-46ED-8525-95BC217F6A93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70F7E77A-E0A0-4DFB-82A5-2E784ECA55D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70F7E77A-E0A0-4DFB-82A5-2E784ECA55D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70F7E77A-E0A0-4DFB-82A5-2E784ECA55D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70F7E77A-E0A0-4DFB-82A5-2E784ECA55D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1429ECE5-9D2D-430E-85F4-F28B737F6D02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1429ECE5-9D2D-430E-85F4-F28B737F6D02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1429ECE5-9D2D-430E-85F4-F28B737F6D02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1429ECE5-9D2D-430E-85F4-F28B737F6D02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9930C454-FAC0-406D-AC0B-499E4CE3E5BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9930C454-FAC0-406D-AC0B-499E4CE3E5BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9930C454-FAC0-406D-AC0B-499E4CE3E5BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9930C454-FAC0-406D-AC0B-499E4CE3E5BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AACB691D-4AF3-4260-87C7-EB503C21099C}
+	EndGlobalSection
+EndGlobal

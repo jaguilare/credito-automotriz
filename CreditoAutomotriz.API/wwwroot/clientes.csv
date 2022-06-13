@@ -1,0 +1,6 @@
+Identificacion;Nombres;Apellidos;Direccion;Telefono;Edad;FechaNacimiento;EstadoCivil;IdentificacionConyuge;NombresConyuge;SujetoCredito
+123456;Jose;Perez;Av. Loja;312345;31;1990/02/20;Soltero;;;0
+111111;Pedro;Laoyza;Av. Cisne;554321;21;1992/05/13;Soltero;;;0
+222222;Macas;Martinez;Av. Bolivar;334251;32;1994/06/17;Casado;557755;Marcela Garay;1
+333333;Arandalo;Lopez;Av. Eugenio;734421;43;1985/10/12;Casado;667844;Ana Cisneros;1
+21232;Jhon;Lojan;Av. Salado;897787;26;1993/03/11;Soltero;;;1

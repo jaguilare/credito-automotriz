@@ -1,0 +1,444 @@
+{
+	"info": {
+		"_postman_id": "aad9569d-c5e0-47da-abf9-102e8f5b4060",
+		"name": "Crédito Automotriz",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18444799"
+	},
+	"item": [
+		{
+			"name": "Clientes",
+			"item": [
+				{
+					"name": "Agregar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"IdentificacionConyuge\": \"1234234\",\r\n    \"EstadoCivil\": \"casado\",\r\n    \"NombresConyuge\": \"Rosita Chile\",\r\n    \"SujetoCredito\": true,\r\n    \"IdClientesNavigation\": {\r\n        \"Identificacion\": \"12341234\",\r\n        \"Nombres\": \"Leonel\",\r\n        \"Apellidos\": \"Messirve\",\r\n        \"Direccion\": \"Av. Mundial\",\r\n        \"Telefono\": \"0978865432\",\r\n        \"FechaNacimiento\": \"1990-05-12\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/clientes",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"IdClientes\": 2060,\r\n    \"IdentificacionConyuge\": null,\r\n    \"EstadoCivil\": \"viudo\",\r\n    \"NombresConyuge\": null,\r\n    \"SujetoCredito\": false,\r\n    \"IdClientesNavigation\": {\r\n        \"IdPersonas\": 2060,\r\n        \"Identificacion\": \"12341234\",\r\n        \"Nombres\": \"Leonel\",\r\n        \"Apellidos\": \"Messirve\",\r\n        \"Direccion\": \"Av. Sin Mundial\",\r\n        \"Telefono\": \"9999999\",\r\n        \"FechaNacimiento\": \"1990-05-12\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/asignacion/333333",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"asignacion",
+								"333333"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/asignacion/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"asignacion",
+								"7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Vehiculos",
+			"item": [
+				{
+					"name": "Agregar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Placa\": \"REW-7645\",\r\n    \"Modelo\": \"Tesla\",\r\n    \"NroChasis\": \"443334-1313\",\r\n    \"IdMarcaVehiculo\": 37,\r\n    \"Tipo\": \"Sedan\",\r\n    \"Cilindraje\": \"1600CC\",\r\n    \"Avaluo\": 36000.00,\r\n    \"Anio\": 2022\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/vehiculos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"vehiculos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"IdVehiculos\": \"1001\",\r\n    \"Placa\": \"AWD-6654\",\r\n    \"Modelo\": \"XYZ\",\r\n    \"NroChasis\": \"UD88299-32\",\r\n    \"IdMarcaVehiculo\": 37,\r\n    \"Tipo\": \"Sedan\",\r\n    \"Cilindraje\": \"1600CC\",\r\n    \"Avaluo\": 16000.00,\r\n    \"Anio\": 2022\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/vehiculos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"vehiculos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/vehiculos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"vehiculos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/asignacion/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"asignacion",
+								"7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Patios Autos",
+			"item": [
+				{
+					"name": "Agregar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Nombre\": \"HRU-4321\",\r\n    \"Direccion\": \"XYZ\",\r\n    \"Telefono\": \"UD88299-32\",\r\n    \"NroPuntoVenta\": 37\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/patios-autos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"patios-autos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"IdPationsAutos\" : 7,\r\n    \"Nombre\": \"Ferraris\",\r\n    \"Direccion\": \"Av. Angel\",\r\n    \"Telefono\": \"UD88299-32\",\r\n    \"NroPuntoVenta\": 37\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/patios-autos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"patios-autos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/patios-autos/motorzaso",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"patios-autos",
+								"motorzaso"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/patios-autos/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"patios-autos",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Asignación Clientes - Patios",
+			"item": [
+				{
+					"name": "Agregar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"IdClientes\": \"HRU-4321\",\r\n    \"IdPatiosAutos\": \"XYZ\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/clientes-patios-autos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"clientes-patios-autos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"IdClientesPatiosAutos\": 1056,\r\n    \"IdClientes\": 2076,\r\n    \"IdPatiosAutos\": 7\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/clientes-patios-autos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"clientes-patios-autos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/clientes-patios-autos/21232",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"clientes-patios-autos",
+								"21232"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/clientes-patios-autos/21232",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"clientes-patios-autos",
+								"21232"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Creditos",
+			"item": [
+				{
+					"name": "Agregar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"FechaElaboracion\": \"1990-05-12\",\r\n    \"IdClientes\": 2079,\r\n    \"IdPatiosAustos\": 2,\r\n    \"IdEjecutivos\": 2081,\r\n    \"IdVehiculos\": 1,\r\n    \"MesesPlazo\": 12,\r\n    \"Cuotas\": 600.00,\r\n    \"Entrada\": 10000.00,\r\n    \"Observacion\": null\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/creditos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"creditos"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
